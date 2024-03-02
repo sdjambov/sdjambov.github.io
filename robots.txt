@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://djmbv.github.io/djmbv/sitemap.xml
+Sitemap: https://djmbv.github.io/sitemap.xml
