@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='[#](https://www.epfl.ch/labs/lfmi/)'>Laboratory of Fluid Mechanics and Instabilities</a>, EPFL. Easily fascinated.
+subtitle: PhD. student at the <a href='https://www.epfl.ch/labs/lfmi'>Laboratory of Fluid Mechanics and Instabilities, EPFL</a>. Easily fascinated.
 
 profile:
   align: right
