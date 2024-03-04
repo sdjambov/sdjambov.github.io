@@ -286,7 +286,7 @@ scholar:
   last_name: [Djambov]
   first_name: [Simeon, S.]
 
-  style: apa
+  style: american-institute-of-physics
   locale: en
 
   source: /_bibliography/
