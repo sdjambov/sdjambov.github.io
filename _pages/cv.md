@@ -1,7 +1,7 @@
 ---
-layout: cv
+layout: none
 permalink: /cv/
-title: cv
+title: <a href="../assets/pdf/cv_djambov.pdf">cv</a>
 nav: true
 nav_order: 4
 ---
