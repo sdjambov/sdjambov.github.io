@@ -4,6 +4,8 @@
 
 // Typography
 
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
 p,
 h1,
 h2,
@@ -204,7 +206,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Vollkorn";
 
     p {
       display: inline-block;
