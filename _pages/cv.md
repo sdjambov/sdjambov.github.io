@@ -1,7 +1,12 @@
 ---
-layout: none
+layout: default
 permalink: /cv/
-title: <a href="../assets/pdf/cv_djambov.pdf">cv</a>
+title: cv
 nav: true
 nav_order: 4
+redirect: ../assets/pdf/cv_djambov.pdf
 ---
+
+<div class="post">
+<h1 class="post-title"><a href="../assets/pdf/cv_djambov.pdf">curriculum vitæ</a></h1>
+</div>
