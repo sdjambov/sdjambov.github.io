@@ -19,12 +19,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  fint-family: .vollkorn {
-    font-family: "Vollkorn", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
+  font-family: "Vollkorn";
 }
 
 hr {
@@ -206,7 +201,6 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: "Vollkorn";
 
     p {
       display: inline-block;
