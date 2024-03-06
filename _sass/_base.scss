@@ -18,7 +18,7 @@ span,
 strong {
   color: var(--global-text-color);
   font-family: Vollkorn;
-  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 hr {
@@ -539,7 +539,6 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
-  font-size: 1.2rem;
 }
 
 .post-list {
