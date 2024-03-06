@@ -17,13 +17,10 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  // <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 400 to 900
-
-  .vollkorn-<uniquifier> {
+  fint-family: .vollkorn {
     font-family: "Vollkorn", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
 }
 }
