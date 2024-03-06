@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: cv
 permalink: /cv/
-title: cv
+title: curriculum vitæ
 nav: true
 nav_order: 4
-redirect: /assets/pdf/cv_djambov.pdf
+cv_pdf: cv_djambov.pdf
 ---
