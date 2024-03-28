@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 <p style="text-align: justify">I am originally from Sofia and presently based between Paris and Lausanne. Before starting my doctorate, I earned my Bachelor's degree in Physics from <a href='https://www.u-bordeaux.fr/en'>Université de Bordeaux</a>, followed by a Master's degree in Fundamental Physics and Applications from <a href='https://univ-cotedazur.eu'>Université Côte d'Azur</a>.</p>
 
-> <p style="text-align: justify">It's even better to gaze into a tub of water. To look at water is always good for you and edifying. Even if you can't see anything in it, it's still good. We looked at the water and saw nothing in it, and soon we got bored. But we comforted ourselves that still we had done a good deed. We counted on our fingers. But what were we counting— we didn't know; for is water in any way countable?</p>
+> <p style="text-align: justify">It's even better to gaze into a tub of water. To look at water is always good for you and edifying. Even if you can't see anything in it, it's still good. We looked at the water and saw nothing in it, and soon we got bored. But we comforted ourselves that still we had done a good deed. We counted on our fingers. But what were we counting — we didn't know; for is water in any way countable?</p>
 > <p style="text-align: right">– Daniil Kharms</p>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
