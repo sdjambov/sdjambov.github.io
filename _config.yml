@@ -47,6 +47,7 @@ rss_icon: false
 
 navbar_fixed: true
 footer_fixed: true
+bib_search: true
 
 # Dimensions
 max_width: 800px
