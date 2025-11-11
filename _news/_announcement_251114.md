@@ -7,6 +7,6 @@ related_posts: false
 
 <div class="row">
     <div class="col-sm">
-        {% include figure.liquid loading="eager" path="assets/img/4.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/doc.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
