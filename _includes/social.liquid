@@ -46,6 +46,9 @@
 {% if site.x_username %}
   <a href="https://twitter.com/{{ site.x_username }}" title="X"><i class="fa-brands fa-x-twitter"></i></a>
 {% endif %}
+{% if site.bluesky_url %}
+  <a href="https://bsky.app/profile/{{ site.bluesky_url }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+{% endif %}
 {% if site.mastodon_username %}
   <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
 {% endif %}
@@ -105,9 +108,6 @@
 {% endif %}
 {% if site.facebook_id %}
   <a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-{% endif %}
-{% if site.bluesky_url %}
-  <a href="https://bsky.app/profile/{{ site.bluesky_url }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
 {% endif %}
 {% if site.youtube_id %}
   <a href="https://youtube.com/@{{ site.youtube_id }}" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
