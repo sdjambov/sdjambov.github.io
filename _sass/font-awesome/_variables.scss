@@ -9,7 +9,7 @@ $icon-property         : --fa !default;
 
 $display               : inline-block !default;
 
-$fw-width              : 1em !default; // calc((20/16) * 1em) !default;
+$fw-width              : calc((20/16) * 1em) !default;
 $inverse               : #fff !default;
 
 $border-box-sizing     : content-box !default;
