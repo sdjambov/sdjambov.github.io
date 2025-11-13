@@ -1308,11 +1308,14 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 /* Custom fix for oversized Bluesky icon */
-.social .contact-icons a[href*="bsky.app"] i,
-.social .contact-icons a[href*="bsky.app"] svg {
-    /* Use 2rem first, then test and adjust to 1.8rem if it still looks too large */
-    font-size: 2rem; 
+.social .contact-icons a[href*="bsky.app"] i {
+    font-size: 1.8rem; 
     
     width: 1em;
-    height: 1em;
+}
+
+/* Custom fix for ResearchGate icon left margin */
+.social .contact-icons a[href*="researchgate"] i {
+    /* Use 2rem first, then test and adjust to 1.8rem if it still looks too large */
+    margin-left: 0.2em;
 }
