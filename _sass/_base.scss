@@ -380,7 +380,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 2.4rem;
+    font-size: 2rem;
 
     a {
       i::before {
@@ -1305,4 +1305,14 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+/* Custom fix for oversized Bluesky icon */
+.social .contact-icons a[href*="bsky.app"] i,
+.social .contact-icons a[href*="bsky.app"] svg {
+    /* Use 2rem first, then test and adjust to 1.8rem if it still looks too large */
+    font-size: 2rem; 
+    
+    width: 1em;
+    height: 1em;
 }
