@@ -1,5 +1,6 @@
 ---
 layout: post
+title: New paper out!
 date: 2024-06-10 20:00:00+0200
 inline: true
 related_posts: false
