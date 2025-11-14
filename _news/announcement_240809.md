@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Thanks after Doc.Mobility semester
 date: 2024-08-09 18:00:00+0200
 inline: true
 related_posts: false
