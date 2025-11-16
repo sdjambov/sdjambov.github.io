@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<p style="text-align: justify">Welcome to my web page! I have recently completed a Ph.D. in Mechanics under the supervision of Prof. François Gallaire in the <a href='https://www.epfl.ch/labs/lfmi'>Laboratory of Fluid Mechanics and Instabilities</a> at <a href='https://www.epfl.ch/en'>EPFL</a>. My research interests lie at the intersection of the hydrodynamic stability of thin-film flows, coupled to heat and/or mass transfer, and geo-morphogenesis.</p>
+<p style="text-align: justify">Welcome to my web page! I have recently completed my Ph.D. in Mechanics under the supervision of Prof. François Gallaire in the <a href='https://www.epfl.ch/labs/lfmi'>Laboratory of Fluid Mechanics and Instabilities</a> at <a href='https://www.epfl.ch/en'>EPFL</a>. My research interests lie at the intersection of the hydrodynamic stability of thin-film flows, coupled to heat and/or mass transfer, and geo-morphogenesis.</p>
 
 <p style="text-align: justify">I am originally from Sofia and presently based between Paris and Lausanne. Before starting my doctorate, I earned my Bachelor's degree in Physics from <a href='https://www.u-bordeaux.fr/en'>Université de Bordeaux</a>, followed by a Master's degree in Fundamental Physics and Applications from <a href='https://univ-cotedazur.eu'>Université Côte d'Azur</a>. As part of my doctoral studies, I carried out a six-month long mobility stay with Prof. Sylvain Courrech du Pont in the <a href='https://msc.u-paris.fr'>Laboratoire Matière et Systèmes Complexes</a> in Paris.</p>
 
