@@ -10,5 +10,5 @@ related_posts: false
     loading="eager" 
     path="assets/img/IMG_0442.jpeg" 
     class="img-fluid rounded z-depth-1" 
-    style="max-width: 100%; height: auto; display: block; margin-top: 10px;" 
+    style="max-width: 100%; height: auto; display: block; margin-top: 7px;" 
 %}
