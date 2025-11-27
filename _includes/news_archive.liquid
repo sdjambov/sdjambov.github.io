@@ -7,7 +7,10 @@
         <table class="table table-sm table-borderless">
           {% for item in year_group.items %}
             <tr>
-              <th scope="row" style="width: 25.25%">{{ item.date | date: '%e %B' | downcase }}</th>
+              <th scope="row" style="width: 25.25%">
+                <span class="news-date-full">{{ item.date | date: '%e %B' | downcase }}</span>
+                <span class="news-date-short">{{ item.date | date: '%e %b' | downcase }}</span>
+              </th>
               <td>
                 {% if item.inline %}
                   {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
