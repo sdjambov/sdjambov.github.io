@@ -1060,6 +1060,10 @@ nav[data-toggle="toc"] {
   }
 }
 
+.news-date-short {
+  display: none;
+}
+
 /* small screens */
 @media (max-width: 576px) {
   /* override stickyness so that the navigation does not follow scrolling */
@@ -1067,6 +1071,14 @@ nav[data-toggle="toc"] {
     visibility: hidden;
     height: 0;
     top: 0;
+  }
+
+  /* hide/show full/short date on small screens in the news archive */
+  .news-date-full {
+    display: none;
+  }
+  .news-date-short {
+    display: inline;
   }
 }
 
