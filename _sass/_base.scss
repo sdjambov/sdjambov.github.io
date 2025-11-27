@@ -839,6 +839,14 @@ footer.sticky-bottom {
     margin-top: 2rem;
     text-align: right;
   }
+
+  /* default: show/hide full/short date */
+  .news-date-short {
+    display: none;
+  }
+  .news-date-full {
+    display: inline;
+  }
 }
 
 // Rouge Color Customization
@@ -1060,10 +1068,6 @@ nav[data-toggle="toc"] {
   }
 }
 
-.news-date-short {
-  display: none;
-}
-
 /* small screens */
 @media (max-width: 576px) {
   /* override stickyness so that the navigation does not follow scrolling */
@@ -1074,10 +1078,10 @@ nav[data-toggle="toc"] {
   }
 
   /* hide/show full/short date on small screens in the news archive */
-  .news-date-full {
+  .news .news-date-full {
     display: none;
   }
-  .news-date-short {
+  .news .news-date-short {
     display: inline;
   }
 }
