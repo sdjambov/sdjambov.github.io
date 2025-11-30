@@ -153,7 +153,16 @@
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+      {% if entry.type == 'phdthesis' %}
+        {% assign thesistype = 'Ph.D. thesis' %}
+      {% elsif entry.type == 'mastersthesis' %}
+        {% assign thesistype = "Master's thesis" %}
+      {% else %}
+        {% assign thesistype = 'Thesis' %}
+      {% endif %}
+      {% capture entrytype %}
+        <em>{{ thesistype }}</em>, {{ entry.school }}
+      {% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
