@@ -804,6 +804,7 @@ footer.sticky-bottom {
         pre {
           font-family: "Fira Code", monospace !important;
           font-feature-settings: "liga" 1, "calt" 1;
+          font-weight: 150;
           font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
@@ -870,6 +871,7 @@ pre {
   code {
     font-family: "Fira Code", monospace !important;
     font-feature-settings: "liga" 1, "calt" 1;
+    font-weight: 150;
     background-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
