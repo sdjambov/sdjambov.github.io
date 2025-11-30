@@ -862,6 +862,8 @@ pre {
 
   pre,
   code {
+    font-family: "Fira Code", monospace;
+    font-feature-settings: "liga" 1, "calt" 1;
     background-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
@@ -870,7 +872,7 @@ pre {
 }
 
 code {
-  font-family: "Fira Code", monospace !important;
+  font-family: "Fira Code", monospace;
   font-feature-settings: "liga" 1, "calt" 1;
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
