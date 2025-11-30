@@ -798,8 +798,6 @@ footer.sticky-bottom {
         }
 
         pre {
-          font-family: "Fira Code", monospace;
-          font-feature-settings: "liga" 1, "calt" 1;
           font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
@@ -864,8 +862,6 @@ pre {
 
   pre,
   code {
-    font-family: "Fira Code", monospace;
-    font-feature-settings: "liga" 1, "calt" 1;
     background-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
@@ -874,8 +870,6 @@ pre {
 }
 
 code {
-  font-family: "Fira Code", monospace;
-  font-feature-settings: "liga" 1, "calt" 1;
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
@@ -1345,4 +1339,14 @@ ninja-keys::part(ninja-input-wrapper) {
     font-size: 1.8rem; 
     
     width: 1em;
+}
+
+/* --- FORCE FIRA CODE FOR ALL CODE BLOCKS --- */
+figure.highlight pre,
+figure.highlight pre code,
+pre.highlight code,
+pre code,
+.code-display-wrapper pre code {
+  font-family: "Fira Code", monospace !important;
+  font-feature-settings: "liga" 1, "calt" 1;
 }
