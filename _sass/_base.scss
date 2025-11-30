@@ -17,7 +17,7 @@ li,
 strong {
   color: var(--global-text-color);
   font-family: "Vollkorn";
-  font-feature-settings: "ss04", "ss11", "liga", "dlig", "calt", "titl";
+  font-feature-settings: "ss04", "ss11", "liga", "dlig", "calt", "titl", "frac";
   font-weight: 450;
 }
 
@@ -804,6 +804,7 @@ footer.sticky-bottom {
         pre {
           font-family: "Fira Mono";
           font-feature-settings: "liga" 1, "calt" 1;
+          font-weight: 150;
           font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
@@ -870,6 +871,7 @@ pre {
   code {
     font-family: "Fira Mono";
     font-feature-settings: "liga" 1, "calt" 1;
+    font-weight: 150;
     background-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
@@ -880,6 +882,7 @@ pre {
 code {
   font-family: "Fira Mono";
   font-feature-settings: "liga" 1, "calt" 1;
+  font-weight: 150;
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
