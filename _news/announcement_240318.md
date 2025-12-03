@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upcoming conference!
+title: Upcoming conference
 date: 2024-03-18 08:00:00+0100
 inline: true
 related_posts: false
