@@ -22,7 +22,8 @@ layout: default
           <tr>
             {% if page.type == 'year' %}
               <th scope="row" style="width: 25.25%">
-                {{ document.date | date: '%e %b' | downcase }}
+                <span class="archive-date-full">{{ document.date | date: '%e %B' | downcase }}</span>
+                <span class="archive-date-short">{{ document.date | date: '%e %b' | downcase }}</span>
               </th>
             {% else %}
               <th scope="row" style="width: 25.25%">
