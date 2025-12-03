@@ -856,6 +856,16 @@ footer.sticky-bottom {
   }
 }
 
+.archive {
+  /* default: show/hide full/short date */
+  .archive-date-short {
+    display: none;
+  }
+  .archive-date-full {
+    display: inline;
+  }
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
@@ -1095,6 +1105,14 @@ nav[data-toggle="toc"] {
     display: none;
   }
   .news .news-date-short {
+    display: inline;
+  }
+
+  /* hide/show full/short date on small screens in the news archive */
+  .archive .archive-date-full {
+    display: none;
+  }
+  .archive .archive-date-short {
     display: inline;
   }
 }
