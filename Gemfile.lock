@@ -221,7 +221,7 @@ DEPENDENCIES
   feedjira
   httparty
   jekyll
-  jekyll-archives
+  jekyll-archives-v2
   jekyll-email-protect
   jekyll-feed
   jekyll-get-json
