@@ -290,8 +290,8 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       year: "/blog/:year/"
-      tag: "/blog/tag/:name/"
-      category: "/blog/category/:name/"
+      tag: "/blog/:type/:name/"
+      category: "/blog/:type/:name/"
   news:
     enabled: [year]
     
