@@ -22,11 +22,11 @@ layout: default
           <tr>
             {% if page.type == 'year' %}
               <th scope="row" style="width: 25.25%">
-                {{ item.date | date: '%e %b' | downcase }}
+                {{ document.date | date: '%e %b' | downcase }}
               </th>
             {% else %}
               <th scope="row" style="width: 25.25%">
-                {{ item.date | date: '%e %b %Y' | downcase }}
+                {{ document.date | date: '%e %b %Y' | downcase }}
               </th>
             {% endif %}
             <td>
