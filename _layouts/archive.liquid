@@ -20,7 +20,15 @@ layout: default
       <table class="table table-sm table-borderless">
         {% for document in page.documents %}
           <tr>
-            <th scope="row" style="width: 25.25%">{{ document.date | date: '%e %b %Y' | downcase }}</th>
+            {% if page.type == 'year' %}
+              <th scope="row" style="width: 25.25%">
+                {{ item.date | date: '%e %b' | downcase }}
+              </th>
+            {% else %}
+              <th scope="row" style="width: 25.25%">
+                {{ item.date | date: '%e %b %Y' | downcase }}
+              </th>
+            {% endif %}
             <td>
               {% if document.redirect == blank %}
                 <a class="post-link" href="{{ document.url | relative_url }}">{{ document.title }}</a>
