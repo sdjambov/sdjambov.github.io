@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upcoming public Ph.D. defence!
+title: Upcoming public Ph.D. defence
 date: 2025-11-10 13:00:00+0100
 inline: true
 related_posts: false
