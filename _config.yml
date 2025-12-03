@@ -174,7 +174,7 @@ collections:
     defaults:
       layout: post
     output: true
-    permalink: /news/:path/
+    permalink: /news/:year/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -291,10 +291,12 @@ jekyll-archives:
     year: archive-year
     tag: archive-tag
     category: archive-category
+    news_year: news-year
   permalinks:
     year: "/blog/:year/"
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
+    news_year: "/news/:year"
 
 display_tags: [] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
