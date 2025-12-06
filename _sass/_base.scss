@@ -389,7 +389,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 2rem;
+    font-size: (16/18)*2rem;
 
     a {
       i::before {
@@ -1372,7 +1372,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 /* Custom fix for oversized Bluesky icon */
 .social .contact-icons a[href*="bsky.app"] i {
-    font-size: 1.8rem; 
+    font-size: (16/18)*1.8rem; 
     
     width: 1em;
 }
