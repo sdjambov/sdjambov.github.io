@@ -11,13 +11,15 @@
                 <span class="news-date-full">{{ item.date | date: '%e %B' | downcase }}</span>
                 <span class="news-date-short">{{ item.date | date: '%e %b' | downcase }}</span>
               </th>
-              <td>
-                {% if item.inline %}
+              {% if item.inline %}
+                <td style="text-align: justify">
                   {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                {% else %}
+                </td>
+              {% else %}
+                <td>
                   <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                {% endif %}
-              </td>
+                </td>
+              {% endif %}
             </tr>
           {% endfor %}
         </table>
