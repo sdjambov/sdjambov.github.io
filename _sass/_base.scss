@@ -23,7 +23,7 @@ strong {
   color: var(--global-text-color);
   font-family: "Vollkorn";
   font-feature-settings: "ss04", "ss11", "liga", "dlig", "calt";
-  font-weight: 450;
+  font-weight: 400;
 }
 
 span {
@@ -807,8 +807,8 @@ footer.sticky-bottom {
         }
 
         pre {
-          font-family: "Fira Mono";
-          font-feature-settings: "liga" 1, "calt" 1;
+          font-family: "Fira Code";
+          font-feature-settings: "cv01", "cv02", "cv06", "zero", "ss04", "ss03", "cv29", "cv30", "cv31", "ss09", "ss07", "ss10";
           font-weight: 400;
           font-size: 1em;
           line-height: 1.4em;
@@ -881,12 +881,12 @@ pre {
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 6px 12px;
+  font-family: "Fira Code";
+  font-feature-settings: "cv01", "cv02", "cv06", "zero", "ss04", "ss03", "cv29", "cv30", "cv31", "ss09", "ss07", "ss10";
+  font-weight: 400;
 
   pre,
   code {
-    font-family: "Fira Mono";
-    font-feature-settings: "liga" 1, "calt" 1;
-    font-weight: 400;
     background-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
@@ -895,8 +895,8 @@ pre {
 }
 
 code {
-  font-family: "Fira Mono";
-  font-feature-settings: "liga" 1, "calt" 1;
+  font-family: "Fira Code";
+  font-feature-settings: "cv01", "cv02", "cv06", "zero", "ss04", "ss03", "cv29", "cv30", "cv31", "ss09", "ss07", "ss10";
   font-weight: 400;
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);

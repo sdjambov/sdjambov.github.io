@@ -32,12 +32,14 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: #e9eaeb !default; /*rgba($purple-color, 0.05);*/
 $code-bg-color-dark: #2c3237 !default;
 
 // My colors
 
 $medium-purple-color: #9370db !default;
+$shaded-purple-color: #7559af !default;
+
 $indigo-color: #4b0082 !default;
 $slate-blue-color: #6a5acd !default;
 
