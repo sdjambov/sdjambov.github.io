@@ -44,7 +44,7 @@ $max-content-width: {{ site.max_width }};
 
 /* Monospace */
 @font-face {
-  font-family: 'Fira Mono';
+  font-family: 'Fira Code';
   src: url('/assets/fonts/firacode/FiraCode-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -53,7 +53,7 @@ $max-content-width: {{ site.max_width }};
 
 /* Monospace light */
 @font-face {
-  font-family: 'Fira Mono';
+  font-family: 'Fira Code';
   src: url('/assets/fonts/firacode/FiraCode-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
