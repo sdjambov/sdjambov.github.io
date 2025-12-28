@@ -3,6 +3,7 @@ layout: page
 permalink: /impressum/
 title: impressum
 description: last updated on 28 december 2025
+text-align: justify
 ---
 
 Should you need to reach me, please refer to the contact information provided <a href="https://people.epfl.ch/simeon.djambov">here</a>.
