@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starting my Doc.Mobility semester!
+title: Starting a Doc.Mobility semester!
 date: 2024-02-12 09:00:00+0100
 inline: true
 related_posts: false
