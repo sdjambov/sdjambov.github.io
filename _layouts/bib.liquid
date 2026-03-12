@@ -78,9 +78,15 @@
         {%- endif -%}
 
         {%- if forloop.length > 1 -%}
-          {% if forloop.first == false %},&nbsp;{% endif %}
+          {% if forloop.first == false %}
+          	{%- if author_array_size > 2 -%}
+          		,&nbsp;
+          	{%- else -%}
+          		&nbsp;
+          	{%- endif -%}
+          {% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
-        {% endif %}
+        {%- endif -%}
         {%- if author_is_self -%}
           <em>
             {{- author.first }}
@@ -154,14 +160,14 @@
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% if entry.type == 'phdthesis' %}
-        {% assign thesistype = 'Ph.D. thesis' %}
+        {% assign thesistype = "Ph.D. thesis" %}
       {% elsif entry.type == 'mastersthesis' %}
         {% assign thesistype = "Master's thesis" %}
       {% else %}
-        {% assign thesistype = 'Thesis' %}
+        {% assign thesistype = "Thesis" %}
       {% endif %}
       {% capture entrytype %}
-        <em>{{ thesistype }}</em>, {{ entry.school }}
+        <em>{{ thesistype }}</em>{{ ", " }}{{ entry.school }}
       {% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
@@ -183,7 +189,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture periodical %}{{ entrytype | strip }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
