@@ -84,7 +84,7 @@
           	{%- else -%}
           		&nbsp;
           	{%- endif -%}
-          {% endif %}
+          {%- endif -%}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {%- endif -%}
         {%- if author_is_self -%}
@@ -94,32 +94,33 @@
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+            <a href="{{ coauthor_url }}" target="_blank">
               {{- author.first }}
               {{ author_last_html -}}
             </a>
           {%- else -%}
             {{- author.first }}
             {{ author_last_html -}}
-          {% endif %}
+          {%- endif -%}
         {%- endif -%}
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+      {%- assign more_authors_hide = 'and ' |append: more_authors | append: ' more author' -%}
       {% if more_authors > 0 %}
         {%- if more_authors > 1 -%}
           {% assign more_authors_hide = more_authors_hide | append: 's' %}
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
-          {% unless forloop.last %}
-            {% assign more_authors_show = more_authors_show | append: ', ' %}
-          {% endunless %}
+          {%- if forloop.last -%}
+            {% assign more_authors_show = more_authors_show | append: 'and ' | append: author.first | append: ' ' | append: author.last %}
+          {%- else -%}
+            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last | append: ', ' %}
+          {%- endif -%}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
+        , 
         <span
           class="more-authors"
           title="click to view {{ more_authors_hide }}"
@@ -193,9 +194,11 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
+    {%- if entry.additional_info -%}
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {%- endif -%}
 
     <!-- Links/Buttons -->
     <div class="links">
