@@ -156,11 +156,8 @@
             {% endif %}
           {% endfor %}
         {%- endif -%}
-        {%- if author_array_size > 2 -%}
-          ,&nbsp;and&nbsp;
-        {%- else -%}
-          &nbsp;and&nbsp;
-        {%- endif -%}
+        
+        ,&nbsp;and&nbsp;
         {%- if author_is_self -%}
           <em>
             {{- author.first }}
@@ -177,7 +174,7 @@
             {{ author_last_html -}}
           {%- endif -%}
         {%- endif -%}
-      {% endif %}
+      {%- endif -%}
       {% if entry.annotation %}
         <i
           class="fa-solid fa-circle-info ml-1"
