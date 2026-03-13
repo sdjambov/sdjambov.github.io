@@ -54,7 +54,7 @@
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-        {% assign author_array_limit = site.max_author_limit %}
+        {% assign author_array_limit = site.max_author_limit | minus: 1 %}
       {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
@@ -104,20 +104,19 @@
           {%- endif -%}
         {%- endif -%}
       {% endfor %}
-      {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+      {%- assign more_authors = author_array_size | minus: author_array_limit | minus: 1 -%}
 
-      {%- assign more_authors_hide = 'and ' |append: more_authors | append: ' more author' -%}
+      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
       {% if more_authors > 0 %}
         {%- if more_authors > 1 -%}
           {% assign more_authors_hide = more_authors_hide | append: 's' %}
         {%- endif -%}
         {% assign more_authors_show = '' %}
-        {%- for author in entry.author_array offset: author_array_limit -%}
-          {%- if forloop.last -%}
-            {% assign more_authors_show = more_authors_show | append: 'and ' | append: author.first | append: ' ' | append: author.last %}
-          {%- else -%}
-            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last | append: ', ' %}
-          {%- endif -%}
+        {%- for author in entry.author_array offset: author_array_limit limit: more_authors -%}
+          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% unless forloop.last %}
+            {% assign more_authors_show = more_authors_show | append: ', ' %}
+          {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         , 
@@ -139,6 +138,45 @@
         >
           {{- more_authors_hide -}}
         </span>
+        {%-  assign author = entry.author_array.last -%}{% assign author_is_self = false %}
+        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {% if site.scholar.last_name contains author_last_name %}
+          {% if site.scholar.first_name contains author.first %}
+            {% assign author_is_self = true %}
+          {% endif %}
+        {%- endif -%}
+        {% assign coauthor_url = null %}
+        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {% if site.data.coauthors[clean_last_name] %}
+          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+            {% if coauthor.firstname contains author.first %}
+              {%- assign coauthor_url = coauthor.url -%}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {%- endif -%}
+        {%- if author_array_size > 2 -%}
+          ,&nbsp;and&nbsp;
+        {%- else -%}
+          &nbsp;and&nbsp;
+        {%- endif -%}
+        {%- if author_is_self -%}
+          <em>
+            {{- author.first }}
+            {{ author_last_html -}}
+          </em>
+        {%- else -%}
+          {%- if coauthor_url -%}
+            <a href="{{ coauthor_url }}" target="_blank">
+              {{- author.first }}
+              {{ author_last_html -}}
+            </a>
+          {%- else -%}
+            {{- author.first }}
+            {{ author_last_html -}}
+          {%- endif -%}
+        {%- endif -%}
       {% endif %}
       {% if entry.annotation %}
         <i
