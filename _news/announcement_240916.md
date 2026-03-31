@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-I am looking forward to giving an oral presentation on the linear instability of condensing film flows as part of the Minisymposium on Instabilities in free-surface flows at the <a href='https://efdc1.de'>1st European Fluid Dynamics Conference</a> (Aachen, 16–20 September). Find <a href='https://sdjambov.github.io/assets/pdf/efdc1.pdf' target="_blank">our abstract here</a>.
+I am looking forward to giving an oral presentation on the linear instability of condensing film flows as part of the Minisymposium on Instabilities in free-surface flows at the <a href='https://euromech.org/conferences/all-events/efdc1/'>1st European Fluid Dynamics Conference</a> (Aachen, 16–20 September). Find <a href='https://sdjambov.github.io/assets/pdf/efdc1.pdf' target="_blank">our abstract here</a>.
