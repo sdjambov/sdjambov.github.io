@@ -863,11 +863,18 @@ button.toggle-btn {
   padding: 8px 12px;
 }
 
-button.toggle-btn:hover,
 button.toggle-btn.active {
   color: white;
   border-color: var(--global-theme-color);
   background-color: var(--global-theme-color)
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button.toggle-btn:hover {
+    color: white;
+    border-color: var(--global-theme-color);
+    background-color: var(--global-theme-color)
+  }
 }
 
 // News archive
