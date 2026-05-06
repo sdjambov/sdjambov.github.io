@@ -7,13 +7,4 @@ nav: true
 nav_order: 2
 ---
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<!-- _pages/conferences.md -->
-<div class="publications">
-
-{% bibliography -f talks %}
-
-</div>
+{% include talks.liquid %}

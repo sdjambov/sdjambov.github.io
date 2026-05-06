@@ -1,0 +1,19 @@
+<!-- Bibsearch Feature -->
+{% if site.bib_search %}
+  <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
+  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="search...">
+{% endif -%}
+<!-- Invited Toggle -->
+<button class="toggle-btn" onclick="toggleInvited()" id="invited-toggle-btn">
+    invited
+</button>
+
+<div class="publications" id="invited-talks" style="display: none;">
+    {% bibliography -f talks --query @*[invited=true]*%}
+</div>
+
+<div class="publications" id="all-talks" style="display: block;">
+    {% bibliography -f talks %}
+</div>
+
+<script src="{{ '/assets/js/invited-talks.js' | relative_url }}"></script>
