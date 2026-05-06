@@ -1,0 +1,1 @@
+function toggleInvited(){const e=document.getElementById("invited-talks"),t=document.getElementById("all-talks"),l=document.getElementById("invited-toggle-btn"),n="none"===e.style.display;e.style.display=n?"block":"none",t.style.display=n?"none":"block",l.classList.toggle("active",n)}
