@@ -1277,51 +1277,6 @@ ninja-keys::part(ninja-input-wrapper) {
   padding: 8px 12px;
 }
 
-.talks-tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.talks-tools-search {
-  flex: 1 1 350px;
-  min-width: 350px;
-}
-
-.talks-tools-search .bibsearch-form-input {
-  width: 100%;
-  max-width: 350px;
-  min-width: 100px;
-}
-
-.talks-tools button.toggle-btn {
-  margin: 0;
-}
-
-@media (max-width: 576px) {
-  .talks-tools {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .talks-tools-search {
-    width: 100%;
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-
-  .talks-tools-search .bibsearch-form-input {
-    max-width: 100%;
-  }
-
-  .bibsearch-form-input {
-    max-width: 100%;
-  }
-}
-
 .newsletter-form-input:focus {
   border-color: var(--global-theme-color) !important;
 }
@@ -1404,6 +1359,57 @@ ninja-keys::part(ninja-input-wrapper) {
   .newsletter-form-container {
     margin-right: 20px;
     margin-left: 20px;
+  }
+}
+
+// Talks tools (search + toggle buttons)
+.talks-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.talks-tools-search {
+  flex: 1 1 350px;
+  min-width: 350px;
+}
+
+.talks-tools-search .bibsearch-form-input {
+  width: 100%;
+  max-width: 350px;
+  min-width: 100px;
+}
+
+.talks-tools button.toggle-btn {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .talks-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .talks-tools button.toggle-btn {
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .talks-tools-search {
+    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .talks-tools-search .bibsearch-form-input {
+    max-width: 100%;
+  }
+
+  .bibsearch-form-input {
+    max-width: 100%;
   }
 }
 
