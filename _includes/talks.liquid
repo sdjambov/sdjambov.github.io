@@ -1,13 +1,17 @@
-<!-- Bibsearch Feature -->
-{% if site.bib_search %}
-  <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="search...">
-{% endif -%}
+<div class="talks-tools">
+  <!-- Bibsearch Feature -->
+  {% if site.bib_search %}
+    <div class="talks-tools-search">
+      <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
+      <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="search...">
+    </div>
+  {% endif -%}
 
-<!-- Invited Toggle -->
-<button class="toggle-btn" onclick="toggleInvited()" id="invited-toggle-btn">
+  <!-- Invited Toggle -->
+  <button class="toggle-btn" onclick="toggleInvited()" id="invited-toggle-btn">
     invited
-</button>
+  </button>
+</div>
 
 <div class="publications" id="invited-talks" style="display: none;">
     {% bibliography -f talks --query @*[invited=true]*%}

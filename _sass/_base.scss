@@ -769,10 +769,7 @@ footer.sticky-bottom {
           padding-bottom: 0.25rem;
           margin-left: 0;
 
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
+          
         }
         a.award.btn {
           border-color: var(--global-highlight-color);
@@ -857,7 +854,7 @@ button.toggle-btn {
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  width: 6rem;
+  width: 5rem;
   box-sizing: border-box;
   border-radius: 6px;
   padding: 8px 12px;
@@ -874,6 +871,11 @@ button.toggle-btn.active {
     color: white;
     border-color: var(--global-theme-color);
     background-color: var(--global-theme-color)
+  }
+  
+  .publications .bibliography .links a.btn:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
   }
 }
 
@@ -1275,6 +1277,51 @@ ninja-keys::part(ninja-input-wrapper) {
   padding: 8px 12px;
 }
 
+.talks-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.talks-tools-search {
+  flex: 1 1 350px;
+  min-width: 350px;
+}
+
+.talks-tools-search .bibsearch-form-input {
+  width: 100%;
+  max-width: 350px;
+  min-width: 100px;
+}
+
+.talks-tools button.toggle-btn {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .talks-tools {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .talks-tools-search {
+    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .talks-tools-search .bibsearch-form-input {
+    max-width: 100%;
+  }
+
+  .bibsearch-form-input {
+    max-width: 100%;
+  }
+}
+
 .newsletter-form-input:focus {
   border-color: var(--global-theme-color) !important;
 }
@@ -1346,7 +1393,7 @@ ninja-keys::part(ninja-input-wrapper) {
   cursor: pointer;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .newsletter-form-input,
   .newsletter-form-button,
   .newsletter-loading-button,
