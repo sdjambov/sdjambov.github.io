@@ -2,10 +2,10 @@
 layout: page
 permalink: /impressum/
 title: impressum
-description: last updated on 31 march 2026
+description: last updated on 3 june 2026
 ---
 
-I maintain this website in a personal capacity for informational purposes only. Should you need to reach me, please refer to the contact information provided below:
+I operate and maintain this website in a personal capacity for informational purposes only. Should you need to reach me, please refer to the contact information provided below:
 <pre>Simeon Djambov
 LadHyX, Ecole Polytechnique
 Institut Polytechnique de Paris
