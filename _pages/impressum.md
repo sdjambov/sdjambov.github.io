@@ -2,7 +2,7 @@
 layout: page
 permalink: /impressum/
 title: impressum
-description: last updated on 3 june 2026
+description: last updated on 15 october 2026
 ---
 
 I operate and maintain this website in a personal capacity for informational purposes only. Should you need to reach me, please refer to the contact information provided below:
