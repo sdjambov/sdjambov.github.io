@@ -2,7 +2,7 @@
 layout: page
 permalink: /collaborations/
 title: collaborations
-description: present and past
+description: past and present
 nav: true
 nav_order: 3
 ---

@@ -758,16 +758,18 @@ footer.sticky-bottom {
             font-style: normal;
           }
 
-          &:hover {
-            color: var(--global-text-color);
-            border-bottom: 1px dashed var(--global-text-color);
-          }
-
           &.expanded {
             color: var(--global-text-color);
             border-bottom-color: var(--global-text-color);
+          }
 
+          @media (hover: hover) {
             &:hover {
+              color: var(--global-text-color);
+              border-bottom-color: var(--global-text-color);
+            }
+
+            &.expanded:hover {
               color: var(--global-text-color-light);
               border-bottom-color: var(--global-text-color-light);
             }
