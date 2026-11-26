@@ -1,34 +1,53 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"gallaire":
+  - firstname: ["François", "F."]
+    name: "François Gallaire"
+    affiliation: "EPFL"
+    url: https://people.epfl.ch/francois.gallaire
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"jambon-puillet":
+  - firstname: ["Etienne", "E."]
+    name: "Etienne Jambon-Puillet"
+    affiliation: "LadHyX, Ecole Polytechnique"
+    url: https://ejambonpuillet.wordpress.com/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"courrech du pont":
+  - firstname: ["Sylvain", "S."]
+    name: "Sylvain Courrech du Pont"
+    affiliation: "MSC, Université Paris Cité"
+    url: https://scholar.google.com/citations?hl=en&user=WFkc_M4AAAAJ&view_op=list_works&sortby=pubdate
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"ledda":
+  - firstname: ["Pier Giuseppe", "P.G."]
+    name: "Pier Giuseppe Ledda"
+    affiliation: "University of Cagliari"
+    url: https://www.pgledda.github.io/ 
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"marcotte":
+  - firstname: ["Alice", "A."]
+    name: "Alice Marcotte"
+    affiliation: "Institut ∂'Alembert, Sorbonne Université"
+    url: https://scholar.google.com/citations?hl=en&user=6PaScuEAAAAJ&view_op=list_works&sortby=pubdate/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"berhanu":
+  - firstname: ["Michael", "M."]
+    name: "Michael Berhanu"
+    affiliation: "MSC, Université Paris Cité"
+    url: https://labo.msc.u-paris.fr/~berhanu/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"chaigne":
+  - firstname: ["Martin", "M."]
+    name: "Martin Chaigne"
+    affiliation: "LadHyX, Ecole Polytechnique"
+    url: https://scholar.google.com/citations?hl=en&user=mr_cS_8AAAAJ&view_op=list_works&sortby=pubdate
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"devauchelle":
+  - firstname: ["Olivier", "O."]
+    name: "Olivier Devauchelle"
+    affiliation: "IPGP, Université Paris Cité"
+    url: https://www.ipgp.fr/~devauchelle/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"fullana":
+  - firstname: ["Tomas", "T."]
+    name: "Tomas Fullana"
+    affiliation: "M2N, Conservatoire national des arts et métiers"
+    url: https://scholar.google.com/citations?hl=en&user=cs6B8uYAAAAJ&view_op=list_works&sortby=pubdate

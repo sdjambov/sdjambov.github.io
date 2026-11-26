@@ -735,11 +735,11 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color);
 
           &:hover {
-            border-bottom-style: solid;
-            text-decoration: none;
+            color: var(--global-theme-color);
+            text-decoration: underline;
           }
         }
 
@@ -907,6 +907,18 @@ button.toggle-btn.active {
   .archive-date-full {
     display: inline;
   }
+  table.table a {
+  color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+
+  &:hover:after :not(.nav-item.dropdown) {
+    width: 100%;
+  }
+}
 }
 
 // Rouge Color Customization
