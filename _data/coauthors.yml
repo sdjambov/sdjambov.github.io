@@ -39,15 +39,3 @@
     name: "Martin Chaigne"
     affiliation: "LadHyX, Ecole Polytechnique"
     url: https://scholar.google.com/citations?hl=en&user=mr_cS_8AAAAJ&view_op=list_works&sortby=pubdate
-
-"devauchelle":
-  - firstname: ["Olivier", "O."]
-    name: "Olivier Devauchelle"
-    affiliation: "IPGP, Université Paris Cité"
-    url: https://www.ipgp.fr/~devauchelle/
-
-"fullana":
-  - firstname: ["Tomas", "T."]
-    name: "Tomas Fullana"
-    affiliation: "M2N, Conservatoire national des arts et métiers"
-    url: https://scholar.google.com/citations?hl=en&user=cs6B8uYAAAAJ&view_op=list_works&sortby=pubdate
